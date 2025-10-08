@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastrar Curso</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 class="text-center mb-4">Cadastrar Novo Livro</h2>
+    <form id="FormLivros" class="needs-validation" novalidate>
+
+      <!-- Titulo do Livro -->
+      <div class="mb-3 border p-3 rounded">
+        <label for="titulo" class="form-label">Titulo do livro</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ex: Dom Casmurro" required>
+        <div class="invalid-feedback">
+          Por favor, informe o titulo do livro.
+        </div>
+      </div>
+
+      <!-- Autor do Livro -->
+      <div class="mb-3">
+        <label for="autor" class="form-label">Autor do Livro</label>
+        <input type="text" class="form-control" id="autor" name="autor" placeholder="Ex: Machado de Assis" required>
+        <div class="invalid-feedback">
+          Por favor, informe o autor do livro.
+        </div>
+      </div>
+
+      <!-- Id do Cliente -->
+      <div class="mb-3">
+        <label for="idCliente" class="form-label">Id do Cliente</label>
+        <input type="number" class="form-control" id="idCliente" name="idCliente" placeholder="Ex: 123" min="0" required>
+        <div class="invalid-feedback">
+          Por favor, informe o Id do Cliente.
+        </div>
+      </div>
+        <!-- Botão Cadastrar -->
+      <div class="d-grid">
+        <button id="cadastrarLivros" class="btn btn-primary btn-lg" type="submit">Cadastrar</button>
+      </div>
+    </form>
+  </div>
+  <div id="tabelaLivros" class=" m-3 container mt-4 text-center" ">
+    
+  </div>
+
+  <!-- Bootstrap JS (Validação) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="livros.js"></script>
+  <style>
+    body {
+      background: #f5f6fa;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</body>
+</html>

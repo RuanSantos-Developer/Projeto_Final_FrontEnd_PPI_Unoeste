@@ -1,0 +1,33 @@
+{
+  "name": "projeto_final_frontend_ppi_unoeste",
+  "version": "1.0.0",
+  "description": "Projeto final front end",
+  "keywords": [
+    "Node",
+    "Projeto",
+    "Faculdade",
+    "Unoeste",
+    "Final"
+  ],
+  "homepage": "https://github.com/RuanSantos-Developer/Projeto_Final_FrontEnd_PPI_Unoeste#readme",
+  "bugs": {
+    "url": "https://github.com/RuanSantos-Developer/Projeto_Final_FrontEnd_PPI_Unoeste/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuanSantos-Developer/Projeto_Final_FrontEnd_PPI_Unoeste.git"
+  },
+  "license": "ISC",
+  "author": "Ruan Oliveira dos Santos",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2"
+  }
+}
